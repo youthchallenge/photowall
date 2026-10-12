@@ -1,0 +1,257 @@
+<!doctype html>
+<html lang="en"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#101e30"><meta name="referrer" content="no-referrer">
+<title>Youth Challenge 2026 · Photo Wall</title>
+<link rel="icon" href="logo.png"><link rel="apple-touch-icon" href="logo.png">
+<style>
+:root{--bg:#f4f2ed;--ink:#14263d;--muted:#617082;--blue:#315b92;--orange:#dc7337;--line:#dce1e6;--white:#fff;--green:#17664c;--danger:#a23630;--shadow:0 18px 60px #12253d0a}*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.55 system-ui,-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif}button,input,select{font:inherit}button,a,input,select{touch-action:manipulation}button,.button{border:1px solid transparent;border-radius:10px;padding:11px 18px;min-height:46px;font-weight:650;cursor:pointer;background:var(--ink);color:white;text-decoration:none;display:inline-flex;justify-content:center;align-items:center;gap:8px}button:hover,.button:hover{filter:brightness(1.1)}button:disabled{opacity:.45;cursor:wait}button.secondary,.button.secondary{background:white;border-color:var(--line);color:var(--ink)}button.ghost,.button.ghost{background:transparent;color:var(--ink);border-color:var(--line)}button.danger{background:#fff1ef;color:var(--danger);border-color:#eed0cc}button.approve{background:var(--green)}button.small{padding:6px 10px;min-height:36px;font-size:13px}input:not([type=checkbox]),select{width:100%;border:1px solid #b9c3cd;border-radius:9px;padding:11px 12px;background:#fff;color:var(--ink)}input:focus,select:focus,button:focus-visible,a:focus-visible{outline:3px solid #e49c63;outline-offset:3px}input[type=checkbox]{width:19px;height:19px;accent-color:var(--blue)}label{display:block;font-size:14px;font-weight:600}label.inline{display:flex;align-items:center;gap:9px}h1,h2,h3,p{margin:0}h1{font-family:Georgia,serif;font-weight:400;line-height:1.08;letter-spacing:-.045em;font-size:clamp(38px,6vw,68px)}h2{font-size:25px;letter-spacing:-.025em}h3{font-size:17px}.muted{color:var(--muted)}.eyebrow{text-transform:uppercase;letter-spacing:.2em;font-size:11px;font-weight:750}.hidden,[hidden]{display:none!important}.row{display:flex;gap:12px;align-items:center;flex-wrap:wrap}.between{justify-content:space-between}.stack{display:grid;gap:18px}.section{margin-top:24px}.card{background:#fff;border:1px solid var(--line);border-radius:18px;padding:26px;box-shadow:var(--shadow)}.wrap{max-width:1200px;margin:auto;padding:28px}.brand{display:flex;align-items:center;gap:13px;text-decoration:none;color:inherit}.brand img{width:74px;height:65px;object-fit:contain}.brand strong{font-size:15px;display:block}.brand small{font-size:11px;letter-spacing:.18em;text-transform:uppercase;color:var(--muted)}header{border-bottom:1px solid var(--line);background:#fff}header .wrap{padding-top:12px;padding-bottom:12px}.tag{display:inline-flex;align-items:center;gap:7px;font-size:12px;font-weight:650;border-radius:20px;background:#edf4ef;color:var(--green);padding:6px 12px}.tag::before{content:'';width:6px;height:6px;border-radius:50%;background:currentColor}.notice{font-size:14px;padding:13px 16px;border-radius:10px;background:#eaf0f8;white-space:pre-wrap}.notice.error{background:#fff0ed;color:#922d26}.hero{background:var(--ink);color:#fff;border-radius:22px;padding:46px;position:relative;overflow:hidden}.hero:after{content:'';position:absolute;right:-85px;top:-130px;width:430px;height:430px;border:1px solid #ffffff13;border-radius:50%;box-shadow:0 0 0 60px #ffffff04,0 0 0 120px #ffffff03;pointer-events:none}.hero .eyebrow{color:#efb48b;margin-bottom:20px}.hero p{max-width:500px;color:#c4cfdb;margin-top:20px}.hero h1{max-width:640px}.guest-layout{display:grid;grid-template-columns:1.45fr 1fr;gap:26px;margin-top:26px}.steps{display:grid;gap:24px;margin:8px 0}.step{display:flex;gap:14px}.step span{background:#f4e9de;border-radius:50%;color:#94501f;display:grid;place-items:center;width:30px;height:30px;flex-shrink:0;font-size:13px;font-weight:750}.step p{font-size:14px;color:var(--muted);margin-top:3px}.drop{border:2px dashed #c1cbd6;border-radius:14px;padding:26px;text-align:center;background:#f9fafc}.drop strong{display:block;margin-bottom:7px;font-size:18px}.drop .row{justify-content:center;margin-top:18px}.upload-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(130px,1fr));gap:12px}.upload-tile{position:relative;border:1px solid var(--line);border-radius:12px;overflow:hidden;background:#f2f4f6}.upload-tile img{width:100%;height:120px;object-fit:cover;display:block}.upload-tile .detail{padding:10px;font-size:12px}.upload-tile button{position:absolute;top:5px;right:5px;border-radius:50%;width:30px;height:30px;min-height:30px;padding:0;background:#ffffffed;color:#172536}.upload-tile progress{width:100%;height:6px;accent-color:var(--green)}.login{max-width:440px;margin:70px auto}.login img{width:112px;display:block;margin:0 auto 15px}.login h1{font-size:36px;text-align:center}.login p{text-align:center;margin:12px 0 24px}.login input{font-size:25px;letter-spacing:.3em;text-align:center}.login button{width:100%;margin-top:15px}.stats{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}.stat{padding:18px 22px}.stat b{display:block;font-size:31px;line-height:1.2;font-weight:550}.stat span{font-size:12px;color:var(--muted);text-transform:uppercase;letter-spacing:.08em}.tabs{display:flex;gap:6px;flex-wrap:wrap;margin:22px 0 14px}.tabs button{background:transparent;color:var(--muted);border:1px solid var(--line)}.tabs button.active{background:var(--ink);color:white}.photo-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(235px,1fr));gap:18px}.photo-card{border:1px solid var(--line);border-radius:14px;overflow:hidden;background:white}.photo-card .picture{position:relative;background:#e9edf1;height:200px}.photo-card img{width:100%;height:100%;object-fit:contain;cursor:zoom-in}.photo-card .select{position:absolute;top:10px;left:10px;background:white;padding:4px;border-radius:5px;display:flex}.photo-card .status{position:absolute;right:8px;top:8px;background:#ffffffed;border-radius:20px;padding:4px 9px;font-size:11px;text-transform:uppercase;letter-spacing:.07em}.photo-card .body{padding:15px;display:grid;gap:11px}.photo-card .meta{font-size:12px;color:var(--muted);overflow:hidden;text-overflow:ellipsis;white-space:nowrap}.photo-card input.order{width:65px;padding:5px 8px;min-height:32px}.photo-card .options{padding-top:8px;border-top:1px solid var(--line);display:grid;gap:10px}.photo-card label{font-size:12px}.photo-card .actions{display:flex;gap:6px}.photo-card .actions button{flex:1}.panel{margin:20px 0}.settings-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.settings-grid label input,.settings-grid label select{margin-top:7px}.qr{background:white;padding:12px;display:inline-block;border-radius:8px}.qr img,.qr canvas{display:block;max-width:100%;height:auto}.linkbox{width:100%;font-size:12px!important}.controls{background:#e9edf2;border-radius:14px;padding:16px}.statusline{font-size:12px;color:var(--muted)}.spinner{width:17px;height:17px;border:2px solid #bac7d5;border-top-color:var(--orange);border-radius:50%;display:inline-block;animation:spin .8s linear infinite;vertical-align:middle}@keyframes spin{to{transform:rotate(360deg)}}footer{font-size:12px;color:var(--muted);padding:28px 0;text-align:center}footer a{color:var(--muted)}#toast{position:fixed;bottom:24px;left:50%;transform:translateX(-50%);padding:14px 22px;background:var(--ink);color:#fff;border-radius:12px;z-index:80;max-width:90%;box-shadow:0 8px 30px #0003}dialog{border:none;border-radius:16px;padding:20px;max-width:95vw;max-height:94vh;background:#0d1725;color:#fff}dialog::backdrop{background:#000b}dialog img{display:block;max-width:85vw;max-height:73vh;object-fit:contain;margin-top:15px}#wall{position:fixed;inset:0;background:#091321;z-index:90;color:white;overflow:hidden}#wall .slide{position:absolute;inset:0;opacity:0;transition:opacity 1s ease;background:#091321;overflow:hidden}#wall .slide.active{opacity:1}.wall-back{position:absolute;inset:-5%;width:110%;height:110%;object-fit:cover;filter:blur(45px) brightness(.26);transform:scale(1.08)}.wall-pictures{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;gap:1vw;padding:1vh 1vw}.wall-pictures img{height:100%;width:100%;min-width:0;object-fit:contain}.wall-pictures.pair img{width:49%}.wall-logo{position:absolute;bottom:3vh;right:3vw;width:12vw;min-width:90px;max-height:25vh;object-fit:contain;background:#f6f3eeeb;border-radius:12px;padding:1vw;z-index:4}.wall-qr{position:absolute;left:3vw;bottom:3vh;background:#fff;color:var(--ink);padding:.7vw;border-radius:10px;text-align:center;z-index:4;width:11vw;min-width:100px}.wall-qr .qr{padding:4px;display:block}.wall-qr small{font-size:clamp(10px,1vw,22px);font-weight:650;display:block}.wall-hold{position:absolute;inset:0;display:grid;place-items:center;text-align:center;background:radial-gradient(ellipse at top,#23426a 0%,#101e30 70%);z-index:3}.wall-hold img{width:22vw;max-height:32vh;object-fit:contain}.wall-hold h1{font-size:clamp(45px,6vw,160px);margin:2vh 0}.wall-hold p{color:#c9d5e2;font-size:clamp(16px,1.7vw,40px)}.wall-tools{position:absolute;top:15px;right:15px;z-index:8;opacity:0;transition:opacity .3s;display:flex;gap:10px}.wall-tools:focus-within,#wall:hover .wall-tools{opacity:1}.wall-tools button{background:#fff;color:#14263d}.wall-status{position:absolute;top:15px;left:15px;z-index:8;font-size:12px;background:#101e30cc;padding:7px 12px;border-radius:15px;opacity:0}#wall:hover .wall-status,.wall-status.problem{opacity:1}#bridge{display:none}#connection{margin-bottom:20px}.print-only{display:none}@media(max-width:760px){.wrap{padding:18px}.hero{padding:30px 25px}.guest-layout{grid-template-columns:1fr}.card{padding:20px}.settings-grid{grid-template-columns:1fr 1fr}.stats{gap:8px}.stat{padding:13px}.stat b{font-size:26px}.stat span{font-size:10px}.photo-grid{grid-template-columns:repeat(auto-fill,minmax(210px,1fr))}.brand strong{font-size:13px}.brand img{width:55px}.row.between{gap:10px}}@media(max-width:440px){.settings-grid{grid-template-columns:1fr}.photo-grid{grid-template-columns:1fr}.photo-card .picture{height:260px}.hero h1{font-size:42px}}@media(prefers-reduced-motion:reduce){*{scroll-behavior:auto!important;animation:none!important;transition:none!important}}@media print{body>*{display:none!important}.print-only{display:flex!important;min-height:95vh;flex-direction:column;justify-content:center;align-items:center;text-align:center;gap:24px}.print-only>img{width:220px}.print-only h1{font-size:40px}.print-only .qr{width:320px}.print-only p{font-size:22px}}
+</style></head><body>
+<header id="header"><div class="wrap row between"><a class="brand" href="./"><img src="logo.png" alt="Youth Challenge"><div><strong data-event>Youth Challenge 2026</strong><small>Community photo wall</small></div></a><span class="tag" id="headerTag">Share the moment</span></div></header>
+<main class="wrap" id="main">
+<div id="connection" class="notice" role="status"><span class="spinner"></span> Connecting to the photo wall…</div>
+<section id="guest" hidden>
+<div class="hero"><div class="eyebrow">Together • Youth Challenge 2026</div><h1>Your moments.<br>Our story.</h1><p>Share a glimpse of Youth Challenge. Your photos could be part of the story on the big screen.</p></div>
+<div class="guest-layout"><div class="card stack"><div class="row between"><h2>Share your photos</h2><span class="tag" id="uploadTag">Uploads open</span></div><label>Your name <span class="muted">(optional · not shown on TV)</span><input id="guestName" maxlength="80" autocomplete="name" placeholder="First name"></label><div class="drop" id="drop"><strong>A moment worth sharing</strong><span class="muted">Choose several photos or take one now.</span><div class="row"><button id="choose">＋ Choose photos</button><button id="camera" class="secondary">Take a photo</button></div></div><input type="file" accept="image/*,.heic,.heif" multiple id="files" hidden><input type="file" accept="image/*" capture="environment" id="cameraFile" hidden><div id="uploadList" class="upload-grid"></div><button id="sendPhotos" disabled>Submit for approval</button><div id="uploadMessage" class="notice" hidden role="status"></div><p class="muted" style="font-size:12px">By submitting, you give Youth Challenge permission to display these photos at the event. Please share photos appropriate for everyone.</p></div>
+<aside class="card"><div class="eyebrow muted">From your phone to the wall</div><div class="steps section"><div class="step"><span>1</span><div><h3>Choose a moment</h3><p>People, friendships, and memories from the event.</p></div></div><div class="step"><span>2</span><div><h3>Send it for review</h3><p>Our moderators review every guest photo before it appears.</p></div></div><div class="step"><span>3</span><div><h3>Watch the big screen</h3><p>Approved photos join the slideshow throughout the event.</p></div></div></div><p class="muted" style="font-size:13px">Keep this page open until your uploads finish. No account needed.</p></aside></div></section>
+<section id="login" class="card login" hidden><img src="logo.png" alt="Youth Challenge"><h1>Welcome back.</h1><p class="muted">Enter your moderator PIN to curate the wall.</p><form id="loginForm"><label for="pin">Moderator PIN</label><input id="pin" type="password" inputmode="numeric" pattern="[0-9]{6,12}" minlength="6" maxlength="12" required autocomplete="current-password"><button id="loginButton">Unlock dashboard</button></form><div id="loginError" class="notice error section" hidden role="alert"></div><p class="muted" style="font-size:12px">This browser stays signed in for up to seven days. Use Sign out on shared devices.</p></section>
+<section id="moderator" hidden>
+<div class="row between"><div><div class="eyebrow muted">Behind the moments</div><h2>Moderator dashboard</h2></div><div class="row"><button id="linksButton" class="secondary">QR & display link</button><button id="settingsButton" class="secondary">Settings</button><button id="logout" class="ghost">Sign out</button></div></div>
+<div class="stats section" id="stats"></div>
+<div class="row between controls section"><div class="row"><strong>TV controls</strong><button class="small secondary" data-control="play">▶ Play</button><button class="small secondary" data-control="pause">Ⅱ Pause</button><button class="small secondary" data-control="hold">Holding screen</button></div><span id="syncStatus" class="statusline">Connecting…</span></div>
+<div id="linksPanel" class="card panel" hidden><div class="row between"><h3>Invite everyone into the story</h3><button id="printQR" class="secondary">Print QR sign</button></div><div class="row section"><div id="guestQR" class="qr"></div><div class="stack" style="flex:1;min-width:220px"><label>Guest upload link<input id="guestLink" class="linkbox" readonly></label><div class="row"><button id="copyGuest" class="small secondary">Copy guest link</button><a id="openTV" class="button small" target="_blank" rel="noopener">Open TV display</a><button id="copyTV" class="small secondary">Copy private TV link</button></div><p class="muted" style="font-size:13px">The guest QR never includes moderator access. The private TV link can view approved images but cannot change them. Keep it with your event team.</p></div></div></div>
+<form id="settingsPanel" class="card panel" hidden><h3>Event & slideshow settings</h3><div class="settings-grid section">
+<label>Event name<input name="EventName" maxlength="100" required></label><label>Photo duration (seconds)<input name="PhotoSeconds" type="number" min="3" max="60" required></label><label>Announcement duration (seconds)<input name="AnnouncementSeconds" type="number" min="5" max="90" required></label><label>Guest photos per announcement<input name="AnnouncementEvery" type="number" min="1" max="50" required></label><label>Logo corner<select name="LogoCorner"><option value="right">Bottom right</option><option value="left">Bottom left</option></select></label><label>Logo width (% of screen)<input name="LogoWidth" type="number" min="5" max="25" required></label><label>Event photo limit<input name="MaxPhotos" type="number" min="50" max="2000" required></label><label class="inline"><input name="UploadOpen" type="checkbox"> Guest uploads open</label><label class="inline"><input name="ShowLogo" type="checkbox"> Show logo on photos</label><label class="inline"><input name="ShowQR" type="checkbox"> Show upload QR on TV</label><label class="inline"><input name="PairPortraits" type="checkbox"> Pair portrait photos</label></div><div class="row section"><button>Save settings</button><span class="muted" style="font-size:13px">Changes reach connected TVs on their next update.</span></div></form>
+<div class="row between section"><div class="tabs" id="tabs"><button data-filter="pending" class="active">Pending</button><button data-filter="approved">Approved</button><button data-filter="announcements">Announcements</button><button data-filter="rejected">Rejected</button><button data-filter="all">All</button></div><button id="addSlides" class="secondary">＋ Upload announcements</button><input type="file" id="slideFiles" multiple accept="image/*,.heic,.heif" hidden></div><div id="adminUploadStatus" class="notice" hidden role="status"></div>
+<div class="row section" style="margin:0 0 18px"><label class="inline"><input type="checkbox" id="selectAll"> Select shown</label><button id="bulkApprove" class="small approve">Approve selected</button><button id="bulkReject" class="small danger">Reject selected</button><button id="refresh" class="small secondary">Refresh</button><span id="photoCount" class="muted" style="font-size:13px"></span></div>
+<div id="photoGrid" class="photo-grid"></div><button id="loadMore" class="secondary section" hidden>Load more</button></section>
+<footer id="footer"><span data-event>Youth Challenge 2026</span> · Photo Wall · build 2026.10.12.1 <span id="modLink"> · <a href="?view=moderator">Moderator</a></span></footer>
+</main>
+<section id="wall" hidden><div class="slide" id="slideA"></div><div class="slide" id="slideB"></div><div class="wall-hold" id="wallHold"><div><img src="logo.png" alt="Youth Challenge"><h1 data-event>Youth Challenge 2026</h1><p id="holdText">Scan the QR code. Share a moment.</p></div></div><img id="wallLogo" class="wall-logo" src="logo.png" alt="Youth Challenge"><div id="wallQR" class="wall-qr"><div class="qr" id="tvQR"></div><small>Share your photos</small></div><div class="wall-tools"><button id="fullscreen">Full screen</button><button id="wallRetry">Reconnect</button></div><div id="wallStatus" class="wall-status">Connecting…</div></section>
+<div class="print-only" id="printSign"><img src="logo.png" alt="Youth Challenge"><h1 data-event>Youth Challenge 2026</h1><p>Share your photos.<br>Be part of the story.</p><div class="qr" id="printCode"></div><p>Scan • Upload • Watch the wall</p><small>Photos are reviewed before appearing on screen.</small></div>
+<dialog id="lightbox"><div class="row between"><strong id="lightboxTitle">Photo preview</strong><button id="closeLightbox" class="small secondary">Close</button></div><img id="largePhoto" alt="Selected photo"></dialog>
+<div id="toast" role="status" hidden></div><iframe id="bridge" title="Photo wall server connection" aria-hidden="true"></iframe>
+<script src="qrcode.min.js"></script>
+<script>
+'use strict';
+// The ONLY code setting to change. Use your deployed Apps Script /exec address.
+const APPS_SCRIPT_URL = 'PASTE_YOUR_APPS_SCRIPT_EXEC_URL_HERE';
+const BUILD='2026.10.12.1';
+const $=s=>document.querySelector(s), $$=s=>Array.from(document.querySelectorAll(s));
+const query=new URLSearchParams(location.search),view=query.get('view')||'guest';
+const storagePrefix='yc-wall:'+location.pathname+':';
+const saved=(key)=>{try{return localStorage.getItem(storagePrefix+key)||'';}catch(_){return '';}};
+const save=(key,value)=>{try{value?localStorage.setItem(storagePrefix+key,value):localStorage.removeItem(storagePrefix+key);}catch(_){}};
+const uuid=()=>crypto.randomUUID();
+let token=saved('moderator'), device=saved('device')||uuid();save('device',device);
+let publicInfo=null,photos=[],settings={},filter='pending',shown=24,selected=new Set(),refreshing=false,moderatorTimer;
+let uploads=[],uploadBusy=false,toastTimer,bridgeWindow,bridgeOrigin,bridgeReady=false;
+let displayKey=new URLSearchParams(location.hash.slice(1)).get('key')||'';
+const channel=uuid(),pending=new Map();let resolveReady,rejectReady;
+const ready=new Promise((resolve,reject)=>{resolveReady=resolve;rejectReady=reject;});
+function toast(text){$('#toast').textContent=text;$('#toast').hidden=false;clearTimeout(toastTimer);toastTimer=setTimeout(()=>$('#toast').hidden=true,5500);}
+function notice(el,text,error=false){el.textContent=text;el.hidden=!text;el.classList.toggle('error',error);}
+function setNames(name){$$('[data-event]').forEach(e=>e.textContent=name);document.title=name+' · Photo Wall';$('.hero .eyebrow').textContent='Together • '+name;}
+function errorText(e){return e?.message||String(e);}
+function esc(s){return String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));}
+function bool(v){return v===true||String(v).toUpperCase()==='TRUE';}
+function baseURL(){const u=new URL(location.href);u.search='';u.hash='';return u;}
+function uploadURL(){const u=baseURL();if(publicInfo?.event||settings.EventID)u.searchParams.set('event',publicInfo?.event||settings.EventID);return u.href;}
+function displayURL(){const u=baseURL();u.searchParams.set('view','display');u.hash=new URLSearchParams({key:displayKey}).toString();return u.href;}
+function makeQR(id,text,size=180){const el=$(id);el.replaceChildren();if(typeof QRCode==='undefined'){el.textContent='QR code file missing. Upload qrcode.min.js to GitHub.';return;}new QRCode(el,{text,width:size,height:size,colorDark:'#14263d',colorLight:'#ffffff',correctLevel:QRCode.CorrectLevel.M});}
+window.addEventListener('message',event=>{
+  const m=event.data;if(!m||m.channel!==channel||!/^https:\/\/[a-zA-Z0-9-]+(?:-script)?\.googleusercontent\.com$/.test(event.origin))return;
+  if(m.type==='yc-ready'&&!bridgeReady){bridgeWindow=event.source;bridgeOrigin=event.origin;bridgeReady=true;resolveReady();return;}
+  if(event.source!==bridgeWindow||event.origin!==bridgeOrigin||m.type!=='yc-response')return;
+  const p=pending.get(m.id);if(!p)return;clearTimeout(p.timer);pending.delete(m.id);
+  m.result?.ok?p.resolve(m.result.data):p.reject(Error(m.result?.error||'The server could not finish that request.'));
+});
+async function api(action,data={},auth=token){
+  await ready;const id=uuid();return new Promise((resolve,reject)=>{
+    const timer=setTimeout(()=>{pending.delete(id);reject(Error(action==='upload'?'Upload timed out. Keep this page open and retry the same photo.':'Connection timed out. Please retry.'));},action==='upload'?150000:60000);
+    pending.set(id,{resolve,reject,timer});bridgeWindow.postMessage({type:'yc-request',channel,id,request:{action,data,token:auth}},bridgeOrigin);
+  });
+}
+function startBridge(){
+  if(!/^https:\/\/script\.google\.com\/macros\/s\/[a-zA-Z0-9_-]+\/exec$/.test(APPS_SCRIPT_URL)){rejectReady(Error('Setup needed: paste your Apps Script /exec URL into APPS_SCRIPT_URL near the bottom of GitHub index.html.'));return;}
+  const u=new URL(APPS_SCRIPT_URL);u.searchParams.set('channel',channel);u.searchParams.set('v',BUILD);$('#bridge').src=u.href;
+  setTimeout(()=>{if(!bridgeReady)rejectReady(Error('Could not connect. Check the deployment is “Execute as me / Anyone,” the GitHub Pages URL is set in Sheets, and Index.html is installed in Apps Script. Then reload.'));},35000);
+}
+async function start(){
+  if(view==='display'){$('#main').hidden=true;$('#header').hidden=true;$('#wall').hidden=false;}
+  else if(view==='moderator'){$('#login').hidden=!token;$('#modLink').hidden=true;}
+  else $('#guest').hidden=false;
+  startBridge();
+  try{
+    publicInfo=await api('public',{},'');setNames(publicInfo.name);$('#connection').hidden=true;
+    if(view==='display'){if(!displayKey)throw Error('Open the private TV link from the moderator dashboard.');await startWall();}
+    else if(view==='moderator'){if(token)await refreshModerator(true);else $('#login').hidden=false;}
+    else{if(query.get('event')&&query.get('event')!==publicInfo.event){publicInfo.uploadOpen=false;notice($('#uploadMessage'),'This QR code belongs to a previous event. Ask a moderator for the current QR code.',true);}updateUploadState();}
+  }catch(e){if(view==='display'){wallProblem(errorText(e));$('#holdText').textContent=errorText(e);}else{notice($('#connection'),errorText(e),true);if(view==='moderator')$('#login').hidden=false;}}
+}
+// Uploads: resize on this device before sending, never upscale, retain 4096px detail.
+let heicLoader;
+async function heicConvert(file){
+  if(!heicLoader)heicLoader=new Promise((resolve,reject)=>{const script=document.createElement('script');script.src='heic2any.min.js';script.onload=resolve;script.onerror=()=>{heicLoader=null;reject(Error('HEIC converter could not load. Check that heic2any.min.js is uploaded to GitHub.'));};document.head.append(script);});
+  await heicLoader;const converted=await heic2any({blob:file,toType:'image/jpeg',quality:.95});return Array.isArray(converted)?converted[0]:converted;
+}
+async function decode(file,converted=false){
+  const url=URL.createObjectURL(file),img=new Image();try{await new Promise((resolve,reject)=>{img.onload=resolve;img.onerror=()=>reject(Error('This browser could not read '+file.name+'. For HEIC, try selecting it from the phone’s photo library, or export it as JPEG first.'));img.src=url;});return {img,release:()=>URL.revokeObjectURL(url)};}catch(e){URL.revokeObjectURL(url);if(!converted&&(/\.hei[cf]$/i.test(file.name||'')||/heic|heif/i.test(file.type||''))){try{return await decode(await heicConvert(file),true);}catch(_){throw Error('Could not convert '+file.name+'. Export it as JPEG and try again.');}}throw e;}
+}
+function canvasImage(img,max,quality){const scale=Math.min(1,max/Math.max(img.naturalWidth,img.naturalHeight)),c=document.createElement('canvas');c.width=Math.max(1,Math.round(img.naturalWidth*scale));c.height=Math.max(1,Math.round(img.naturalHeight*scale));const ctx=c.getContext('2d');ctx.fillStyle='#fff';ctx.fillRect(0,0,c.width,c.height);ctx.drawImage(img,0,0,c.width,c.height);return {data:c.toDataURL('image/jpeg',quality),width:c.width,height:c.height};}
+async function prepare(file){
+  if(file.size>60*1024*1024)throw Error(file.name+' is too large (60 MB maximum source file).');
+  const {img,release}=await decode(file);try{
+    const full=canvasImage(img,4096,.9);if(full.data.length>Math.ceil(8*1024*1024/3)*4+24)throw Error(file.name+' is still over 8 MB after resizing. Export a smaller JPEG.');
+    return {image:full.data,thumb:canvasImage(img,480,.72).data,width:full.width,height:full.height};
+  }finally{release();}
+}
+async function addFiles(fileList){
+  if(uploadBusy)return;
+  const files=Array.from(fileList);if(files.length+uploads.filter(x=>x.state!=='done').length>15){toast('Choose up to 15 photos at a time. You can add another batch afterward.');return;}
+  for(const file of files){if(uploads.some(x=>x.file.name===file.name&&x.file.size===file.size&&x.file.lastModified===file.lastModified&&x.state!=='done'))continue;uploads.push({id:uuid(),file,url:URL.createObjectURL(file),state:'ready',message:'Ready to submit'});}renderUploads();
+}
+function renderUploads(){
+  const root=$('#uploadList');root.replaceChildren();uploads.forEach(u=>{const tile=document.createElement('div');tile.className='upload-tile';const img=document.createElement('img');img.src=u.url;img.alt=u.file.name;img.onerror=()=>{img.alt='Photo preview unavailable';};tile.append(img);const detail=document.createElement('div');detail.className='detail';detail.textContent=u.message;tile.append(detail);const progress=document.createElement('progress');progress.max=100;if(u.state==='done')progress.value=100;else if(u.state==='ready'||u.state==='error')progress.value=0;detail.append(progress);if(!uploadBusy){const b=document.createElement('button');b.textContent='×';b.setAttribute('aria-label','Remove '+u.file.name);b.onclick=()=>{URL.revokeObjectURL(u.url);uploads=uploads.filter(x=>x!==u);renderUploads();};tile.append(b);}root.append(tile);});updateUploadState();
+}
+function updateUploadState(){const open=publicInfo?.uploadOpen;$('#choose').disabled=!open||uploadBusy;$('#camera').disabled=!open||uploadBusy;$('#sendPhotos').disabled=!open||uploadBusy||!uploads.some(u=>u.state!=='done');$('#sendPhotos').textContent=uploadBusy?'Submitting photos…':uploads.some(u=>u.state==='error')?'Retry unfinished photos':'Submit for approval';$('#uploadTag').textContent=open?'Uploads open':'Uploads closed';}
+async function uploadOne(u,announcement=false){
+  const data=await prepare(u.file);
+  return api('upload',{...data,id:u.id,device,event:publicInfo.event,name:announcement?'Announcement':$('#guestName').value,announcement,order:announcement?nextAnnouncementOrder++:0},announcement?token:'');
+}
+$('#choose').onclick=()=>$('#files').click();$('#camera').onclick=()=>$('#cameraFile').click();
+['#files','#cameraFile'].forEach(s=>$(s).onchange=async e=>{await addFiles(e.target.files);e.target.value='';});
+$('#drop').ondragover=e=>e.preventDefault();$('#drop').ondrop=e=>{e.preventDefault();if(publicInfo?.uploadOpen)addFiles(e.dataTransfer.files);};
+$('#sendPhotos').onclick=async()=>{
+  if(uploadBusy)return;uploadBusy=true;notice($('#uploadMessage'),'');renderUploads();
+  for(const u of uploads.filter(x=>x.state!=='done')){u.state='uploading';u.message='Preparing & uploading…';renderUploads();try{await uploadOne(u);u.state='done';u.message='✓ Submitted for approval';}catch(e){u.state='error';u.message=errorText(e);}renderUploads();}
+  uploadBusy=false;renderUploads();const failed=uploads.some(x=>x.state==='error');notice($('#uploadMessage'),failed?'Some photos need another try. Successful uploads are already submitted.':'Thank you! Your photos are with the moderators. Approved photos will join the wall.',failed);
+};
+// Moderator dashboard
+$('#loginForm').onsubmit=async e=>{e.preventDefault();$('#loginButton').disabled=true;notice($('#loginError'),'');try{const r=await api('login',{pin:$('#pin').value},'');token=r.token;save('moderator',token);$('#pin').value='';await refreshModerator(true);}catch(err){notice($('#loginError'),errorText(err),true);}finally{$('#loginButton').disabled=false;}};
+$('#logout').onclick=async()=>{try{await api('logout');}catch(e){toast('Local sign-out complete. Server session expires automatically.');}token='';save('moderator','');clearTimeout(moderatorTimer);$('#moderator').hidden=true;$('#login').hidden=false;photos=[];thumbCache.clear();};
+async function refreshModerator(initial=false){
+  if(refreshing||!token)return;refreshing=true;
+  try{const r=await api('moderator');settings=r.settings;photos=r.photos;displayKey=r.displayKey;publicInfo.event=settings.EventID;publicInfo.name=settings.EventName;setNames(settings.EventName);$('#login').hidden=true;$('#moderator').hidden=false;$('#connection').hidden=true;$('#headerTag').textContent='Moderator';$('#syncStatus').textContent='Synced '+new Date().toLocaleTimeString([], {hour:'numeric',minute:'2-digit'})+' · TV: '+settings.DisplayMode;renderStats();renderPhotos();if(initial)fillSettings();}
+  catch(e){$('#syncStatus').textContent='Connection issue · '+errorText(e);if(/session expired/i.test(errorText(e))){token='';save('moderator','');$('#moderator').hidden=true;$('#login').hidden=false;notice($('#loginError'),errorText(e),true);}else if(initial)throw e;}
+  finally{refreshing=false;clearTimeout(moderatorTimer);if(token)moderatorTimer=setTimeout(()=>refreshModerator(),12000);}
+}
+function renderStats(){const counts=[['Awaiting review',photos.filter(p=>p.status==='pending').length],['Guest photos live',photos.filter(p=>p.status==='approved'&&!p.announcement&&p.enabled).length],['Announcements live',photos.filter(p=>p.status==='approved'&&p.announcement&&p.enabled).length],['Total uploads',photos.length]];$('#stats').innerHTML=counts.map(([title,n])=>'<div class="card stat"><b>'+n+'</b><span>'+title+'</span></div>').join('');}
+function filteredPhotos(){return photos.filter(p=>filter==='all'||(filter==='announcements'?p.announcement:filter==='approved'?p.status==='approved'&&!p.announcement:p.status===filter)).sort((a,b)=>filter==='announcements'?a.order-b.order||a.created-b.created:b.created-a.created);}
+const thumbCache=new Map();let thumbGeneration=0;
+function renderPhotos(){
+  if($('#lightbox').open)return;
+  const list=filteredPhotos(),visible=list.slice(0,shown);selected=new Set([...selected].filter(id=>visible.some(p=>p.id===id)));$('#photoCount').textContent=list.length+' '+(list.length===1?'photo':'photos');$('#loadMore').hidden=list.length<=shown;$('#selectAll').checked=!!visible.length&&visible.every(p=>selected.has(p.id));
+  $('#photoGrid').innerHTML=visible.length?visible.map(p=>`<article class="photo-card" data-id="${esc(p.id)}"><div class="picture"><img data-photo="${esc(p.id)}" alt="${esc(p.announcement?'Announcement':'Guest photo')}" ${thumbCache.has(p.id)?'src="'+thumbCache.get(p.id)+'"':''}><label class="select"><input aria-label="Select photo" type="checkbox" data-select="${esc(p.id)}" ${selected.has(p.id)?'checked':''}></label><span class="status">${esc(p.status)}</span></div><div class="body"><div class="meta">${esc(p.name||'Guest')} · ${new Date(p.created).toLocaleTimeString([], {hour:'numeric',minute:'2-digit'})}</div><div class="actions"><button class="small approve" data-action="approved">Approve</button><button class="small danger" data-action="rejected">Reject</button><button class="small secondary" data-action="pending" title="Return to pending">Undo</button></div><label class="inline"><input type="checkbox" data-field="announcement" ${p.announcement?'checked':''}> Announcement slide</label>${p.announcement?`<div class="options"><div class="row between"><label>Sequence <input class="order" type="number" min="0" max="9999" value="${p.order}" data-field="order"></label><label class="inline"><input type="checkbox" data-field="enabled" ${p.enabled?'checked':''}> Enabled</label></div><label class="inline"><input type="checkbox" data-field="overlays" ${p.overlays?'checked':''}> Logo & QR overlays</label></div>`:''}${p.status==='approved'&&p.enabled?'<button class="small secondary" data-action="next">Show next on TV</button>':''}</div></article>`).join(''):'<div class="card"><h3>'+({pending:'All caught up.',announcements:'Make room for the important things.',approved:'The story starts here.',rejected:'No rejected photos.',all:'Your wall is ready.'}[filter])+'</h3><p class="muted section">'+(filter==='announcements'?'Upload your announcement graphics. They rotate in sequence between guest photos.':'Photos will appear here as they arrive.')+'</p></div>';
+  const generation=++thumbGeneration;let cursor=0;async function worker(){while(cursor<visible.length&&generation===thumbGeneration){const p=visible[cursor++];if(thumbCache.has(p.id))continue;try{const r=await api('image',{id:p.id,thumb:true});thumbCache.set(p.id,r.data);if(generation===thumbGeneration){const el=$('[data-photo="'+p.id+'"]');if(el)el.src=r.data;}}catch(_){}}}worker();worker();
+}
+$('#photoGrid').onchange=async e=>{
+  const el=e.target,id=el.closest('[data-id]')?.dataset.id;if(!id)return;
+  if(el.dataset.select){el.checked?selected.add(id):selected.delete(id);return;}
+  if(el.dataset.field){el.disabled=true;try{await api('moderate',{ids:[id],[el.dataset.field]:el.dataset.field==='order'?Number(el.value):el.checked});await refreshModerator();}catch(err){toast(errorText(err));el.disabled=false;}}
+};
+$('#photoGrid').onclick=async e=>{
+  const id=e.target.closest('[data-id]')?.dataset.id;if(!id)return;
+  if(e.target.dataset.photo){$('#largePhoto').removeAttribute('src');$('#lightboxTitle').textContent='Loading full-resolution image…';$('#lightbox').showModal();try{const r=await api('image',{id});$('#largePhoto').src=r.data;$('#lightboxTitle').textContent=photos.find(p=>p.id===id)?.announcement?'Announcement preview':'Photo preview';}catch(err){$('#lightboxTitle').textContent=errorText(err);}return;}
+  const a=e.target.dataset.action;if(!a)return;e.target.disabled=true;try{await api(a==='next'?'showNext':'moderate',a==='next'?{id}:{ids:[id],status:a});toast(a==='next'?'Queued for the TV’s next update.':'Photo updated.');await refreshModerator();}catch(err){toast(errorText(err));e.target.disabled=false;}
+};
+$('#closeLightbox').onclick=()=>{$('#lightbox').close();$('#largePhoto').removeAttribute('src');};
+$('#tabs').onclick=e=>{if(!e.target.dataset.filter)return;filter=e.target.dataset.filter;shown=24;selected.clear();$$('#tabs button').forEach(b=>b.classList.toggle('active',b.dataset.filter===filter));renderPhotos();};
+$('#loadMore').onclick=()=>{shown+=24;renderPhotos();};$('#refresh').onclick=()=>refreshModerator();
+$('#selectAll').onchange=e=>{selected=new Set(e.target.checked?filteredPhotos().slice(0,shown).map(p=>p.id):[]);renderPhotos();};
+async function bulk(status){if(!selected.size){toast('Select one or more photos first.');return;}try{const ids=[...selected];for(let i=0;i<ids.length;i+=50)await api('moderate',{ids:ids.slice(i,i+50),status});selected.clear();await refreshModerator();}catch(e){toast(errorText(e));}}
+$('#bulkApprove').onclick=()=>bulk('approved');$('#bulkReject').onclick=()=>bulk('rejected');
+$$('[data-control]').forEach(b=>b.onclick=async()=>{b.disabled=true;try{await api('settings',{DisplayMode:b.dataset.control});await refreshModerator();}catch(e){toast(errorText(e));}finally{b.disabled=false;}});
+function fillSettings(){const f=$('#settingsPanel');Array.from(f.elements).filter(el=>el.name).forEach(el=>{el.type==='checkbox'?el.checked=bool(settings[el.name]):el.value=settings[el.name]??'';});}
+$('#settingsButton').onclick=()=>{if($('#settingsPanel').hidden)fillSettings();$('#settingsPanel').hidden=!$('#settingsPanel').hidden;};
+$('#settingsPanel').onsubmit=async e=>{e.preventDefault();const b=e.target.querySelector('button');b.disabled=true;const data={};Array.from(e.target.elements).filter(el=>el.name).forEach(el=>data[el.name]=el.type==='checkbox'?el.checked:el.value);try{await api('settings',data);toast('Settings saved.');await refreshModerator();}catch(err){toast(errorText(err));}finally{b.disabled=false;}};
+$('#linksButton').onclick=()=>{$('#linksPanel').hidden=!$('#linksPanel').hidden;if(!$('#linksPanel').hidden){$('#guestLink').value=uploadURL();$('#openTV').href=displayURL();makeQR('#guestQR',uploadURL());makeQR('#printCode',uploadURL(),320);}};
+async function copy(text){try{await navigator.clipboard.writeText(text);toast('Link copied.');}catch(_){prompt('Copy this link:',text);}}
+$('#copyGuest').onclick=()=>copy(uploadURL());$('#copyTV').onclick=()=>copy(displayURL());$('#printQR').onclick=()=>window.print();
+let nextAnnouncementOrder=1,adminFiles=[];$('#addSlides').onclick=()=>$('#slideFiles').click();
+$('#slideFiles').onchange=async e=>{
+  const files=Array.from(e.target.files);e.target.value='';if(!files.length)return;
+  nextAnnouncementOrder=Math.max(0,...photos.filter(p=>p.announcement).map(p=>p.order))+1;
+  adminFiles=files.map(file=>({file,id:uuid(),done:false}));await uploadAnnouncements();
+};
+async function uploadAnnouncements(){
+  $('#addSlides').disabled=true;let failed=0;
+  for(let i=0;i<adminFiles.length;i++){const u=adminFiles[i];if(u.done)continue;notice($('#adminUploadStatus'),'Uploading announcement '+(i+1)+' of '+adminFiles.length+'…');try{await uploadOne(u,true);u.done=true;}catch(e){failed++;u.error=errorText(e);}}
+  $('#addSlides').disabled=false;
+  if(failed){notice($('#adminUploadStatus'),failed+' announcement(s) need another try: '+adminFiles.filter(x=>!x.done).map(x=>x.error).join(' '),true);const b=document.createElement('button');b.className='small secondary';b.textContent='Retry unfinished announcements';b.onclick=uploadAnnouncements;$('#adminUploadStatus').append(b);}else notice($('#adminUploadStatus'),'Announcements uploaded and approved. Adjust their sequence and overlays in the Announcements tab.');
+  filter='announcements';$$('#tabs button').forEach(b=>b.classList.toggle('active',b.dataset.filter===filter));await refreshModerator();
+}
+// SCHEDULER_START — pure scheduling logic, also exercised by the included tests.
+class WallScheduler {
+  constructor(random=Math.random){this.random=random;this.bag=[];this.lastGuest='';this.lastAd='';this.count=0;this.known=new Set();}
+  update(photos){this.guests=photos.filter(p=>!p.announcement);this.ads=photos.filter(p=>p.announcement).sort((a,b)=>a.order-b.order||a.created-b.created);const ids=new Set(this.guests.map(p=>p.id));this.bag=this.bag.filter(id=>ids.has(id));const fresh=this.guests.filter(p=>!this.known.has(p.id)).map(p=>p.id);this.bag=[...fresh,...this.bag];this.known=ids;}
+  shuffle(ids){for(let i=ids.length-1;i>0;i--){const j=Math.floor(this.random()*(i+1));[ids[i],ids[j]]=[ids[j],ids[i]];}return ids;}
+  next(interval=9,pair=false){
+    if(this.ads.length&&(!this.guests.length||this.count>=interval)){const i=this.ads.findIndex(p=>p.id===this.lastAd);return [this.ads[(i+1)%this.ads.length]];}
+    if(!this.guests.length)return [];
+    if(!this.bag.length)this.bag=this.shuffle(this.guests.map(p=>p.id));
+    if(this.bag[0]===this.lastGuest&&this.guests.length>1){const other=this.bag.findIndex(id=>id!==this.lastGuest);if(other>=0)[this.bag[0],this.bag[other]]=[this.bag[other],this.bag[0]];else this.bag=this.shuffle(this.guests.map(p=>p.id).filter(id=>id!==this.lastGuest));}
+    const firstID=this.bag.shift(),first=this.guests.find(p=>p.id===firstID),out=[first];
+    if(pair&&first.height>first.width&&interval-this.count>=2){const i=this.bag.findIndex(id=>{const p=this.guests.find(p=>p.id===id);return p&&p.height>p.width;});if(i>=0){const secondID=this.bag.splice(i,1)[0];out.push(this.guests.find(p=>p.id===secondID));}}
+    return out;
+  }
+  shown(items){if(!items.length)return;if(items[0].announcement){this.lastAd=items[0].id;this.count=0;}else{this.count+=items.length;this.lastGuest=items[items.length-1].id;}}
+  preview(){const p=this.ads.concat(this.guests);return [...new Set(this.bag.slice(0,2).concat(this.ads.length?[this.ads[(this.ads.findIndex(p=>p.id===this.lastAd)+1)%this.ads.length].id]:[]))].map(id=>p.find(x=>x.id===id)).filter(Boolean);}
+}
+// SCHEDULER_END
+const scheduler=new WallScheduler();const imageCache=new Map(),imagePending=new Map();let wallPhotos=[],wallSettings=null,wallTimer,pollTimer,activeLayer=0,currentItems=[],wallLoading=false,wallGeneration=0,lastCommand='',wallHealthy=false,wallPollBusy=false;
+function wallProblem(message){$('#wallStatus').textContent=message;$('#wallStatus').classList.add('problem');}
+async function wallImage(id){
+  if(imageCache.has(id))return imageCache.get(id);
+  if(imagePending.has(id))return imagePending.get(id);
+  const promise=(async()=>{const r=await api('image',{id},displayKey);const img=new Image();img.src=r.data;await img.decode();imageCache.set(id,r.data);while(imageCache.size>24){const victim=[...imageCache.keys()].find(k=>!currentItems.some(p=>p.id===k)&&k!==id);if(!victim)break;imageCache.delete(victim);}return r.data;})();imagePending.set(id,promise);try{return await promise;}finally{imagePending.delete(id);}
+}
+function drawOverlays(){
+  if(!wallSettings)return;const allowed=!currentItems[0]?.announcement||currentItems[0].overlays;
+  const holding=!$('#wallHold').hidden;$('#wallLogo').hidden=holding||!wallSettings.ShowLogo||!allowed;$('#wallQR').hidden=!wallSettings.ShowQR||!wallSettings.UploadOpen||(!holding&&!allowed);
+  $('#wallLogo').style.width=wallSettings.LogoWidth+'vw';$('#wallLogo').style.right=wallSettings.LogoCorner==='right'?'3vw':'auto';$('#wallLogo').style.left=wallSettings.LogoCorner==='left'?'3vw':'auto';$('#wallQR').style.left=wallSettings.LogoCorner==='right'?'3vw':'auto';$('#wallQR').style.right=wallSettings.LogoCorner==='left'?'3vw':'auto';
+}
+function holding(message){$('#wallHold').hidden=false;$('#holdText').textContent=message||'Scan the QR code. Share a moment.';drawOverlays();}
+async function advanceWall(forced){
+  if(wallLoading||!wallSettings||wallSettings.DisplayMode==='hold'||(wallSettings.DisplayMode==='pause'&&!forced))return;
+  clearTimeout(wallTimer);wallLoading=true;const generation=wallGeneration;
+  try{
+    let items=forced?[forced]:scheduler.next(wallSettings.AnnouncementEvery,wallSettings.PairPortraits);
+    if(!items.length){holding(wallSettings.UploadOpen?'Scan the QR code. Share a moment.':'Welcome. More moments coming soon.');return;}
+    const data=await Promise.all(items.map(p=>wallImage(p.id)));
+    if(generation!==wallGeneration||wallSettings.DisplayMode!=='play'||items.some(p=>!wallPhotos.some(x=>x.id===p.id)))return;
+    currentItems=items;const next=activeLayer?$('#slideA'):$('#slideB'),old=activeLayer?$('#slideB'):$('#slideA');next.replaceChildren();
+    const back=document.createElement('img');back.className='wall-back';back.alt='';back.src=data[0];next.append(back);
+    const holder=document.createElement('div');holder.className='wall-pictures'+(items.length>1?' pair':'');data.forEach(src=>{const img=document.createElement('img');img.src=src;img.alt=items[0].announcement?'Event announcement':'Youth Challenge photo';holder.append(img);});next.append(holder);
+    next.classList.add('active');old.classList.remove('active');activeLayer=1-activeLayer;$('#wallHold').hidden=true;scheduler.shown(items);drawOverlays();
+    setTimeout(()=>{if(!old.classList.contains('active'))old.replaceChildren();},1200);
+    // Keep prefetch bounded; whole-album downloads would overwhelm Apps Script and TV memory.
+    for(const p of scheduler.preview().slice(0,2))wallImage(p.id).catch(()=>{});
+  }catch(e){if(!currentItems.length)holding('The next photo is still loading.');wallProblem('Reconnecting · already loaded photos remain available');if(!wallHealthy){const cached=wallPhotos.filter(p=>imageCache.has(p.id)&&p.id!==currentItems[0]?.id);if(cached.length){scheduler.bag=[cached[0].id,...scheduler.bag.filter(id=>id!==cached[0].id)];}}}
+  finally{wallLoading=false;wallTimer=setTimeout(()=>advanceWall(),1000*(currentItems[0]?.announcement?wallSettings.AnnouncementSeconds:wallSettings.PhotoSeconds));}
+}
+async function pollWall(){
+  if(wallPollBusy)return;wallPollBusy=true;
+  try{
+    const r=await api('display',{},displayKey),prior=wallSettings;wallHealthy=true;wallSettings=r.settings;wallPhotos=r.photos;publicInfo.event=wallSettings.EventID;setNames(wallSettings.EventName);
+    if(prior&&prior.EventID!==wallSettings.EventID){wallGeneration++;currentItems=[];imageCache.clear();scheduler.count=0;scheduler.lastAd='';}
+    scheduler.update(wallPhotos);
+    const allowed=new Set(wallPhotos.map(p=>p.id));for(const id of imageCache.keys())if(!allowed.has(id))imageCache.delete(id);
+    const removed=currentItems.some(p=>!allowed.has(p.id));if(removed){wallGeneration++;currentItems=[];$('#slideA').replaceChildren();$('#slideB').replaceChildren();holding('More moments coming soon.');}
+    currentItems=currentItems.map(p=>wallPhotos.find(x=>x.id===p.id)||p);
+    $('#wallStatus').textContent='Connected · '+wallPhotos.length+' approved images';$('#wallStatus').classList.remove('problem');
+    if(!prior||prior.EventID!==wallSettings.EventID){makeQR('#tvQR',uploadURL(),256);}
+    if(wallSettings.DisplayMode==='hold'){wallGeneration++;clearTimeout(wallTimer);holding();}
+    else if(wallSettings.DisplayMode==='pause'){clearTimeout(wallTimer);if(!currentItems.length)holding('Slideshow paused.');}
+    else if(wallSettings.ShowNextNonce&&wallSettings.ShowNextNonce!==lastCommand){const p=wallPhotos.find(x=>x.id===wallSettings.ShowNextID);if(p&&!wallLoading){lastCommand=wallSettings.ShowNextNonce;await advanceWall(p);}}
+    else if(removed||!currentItems.length||prior?.DisplayMode!=='play')await advanceWall();
+    drawOverlays();
+  }catch(e){wallHealthy=false;wallProblem(errorText(e));if(/Display access expired/.test(errorText(e))){wallGeneration++;clearTimeout(wallTimer);currentItems=[];wallPhotos=[];imageCache.clear();$('#slideA').replaceChildren();$('#slideB').replaceChildren();holding('Display access changed. Open a fresh TV link.');}}
+  finally{wallPollBusy=false;clearTimeout(pollTimer);pollTimer=setTimeout(pollWall,10000);}
+}
+async function startWall(){await pollWall();}
+$('#fullscreen').onclick=async()=>{try{if(document.fullscreenElement)await document.exitFullscreen();else await $('#wall').requestFullscreen();if(navigator.wakeLock)await navigator.wakeLock.request('screen');}catch(_){wallProblem('Use your browser’s full-screen command and disable computer sleep.');}};
+$('#wallRetry').onclick=()=>location.reload();
+window.addEventListener('online',()=>{if(view==='display')pollWall();else if(view==='moderator'&&token)refreshModerator();});
+start();
+</script></body></html>
